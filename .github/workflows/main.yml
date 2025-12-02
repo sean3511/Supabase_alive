@@ -2,7 +2,9 @@ name: Supabase Keep Alive
 
 on:
   schedule:
-    - cron: "25 17 * * *"
+    # 每 1 分鐘跑一次（極高頻，只是為了測試）
+    - cron: "*/1 * * * *"
+
   workflow_dispatch:
 
 jobs:
