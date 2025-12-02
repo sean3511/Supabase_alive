@@ -1,9 +1,9 @@
 name: Supabase Keep Alive
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'   # 每 5 分鐘跑一次（UTC）
   workflow_dispatch:
+  schedule:
+    - cron: "*/2 * * * *"  # 每 5 分鐘跑一次（UTC）
 
 jobs:
   ping:
